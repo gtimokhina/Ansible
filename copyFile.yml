@@ -1,0 +1,8 @@
+---
+- hosts: Servers
+  become: yes
+  tasks:
+  - name: Ansible copy index.html  
+    copy:
+      src: ~/index.html
+      dest: /var/www/html/index.html
